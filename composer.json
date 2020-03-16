@@ -1,0 +1,25 @@
+{
+    "name": "mengsen/jtt",
+    "homepage": "http://www.web3.xin/",
+    "description": "京东客、京东联盟、京东API、京推推",
+    "authors": [
+        {
+            "name": "mengsen",
+            "email": "626512443@qq.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.6"
+    },
+    "license": [
+        "MIT"
+    ],
+    "autoload": {
+        "psr-4": {
+            "mengsen\\jd\\": [
+                "src/"
+            ]
+        }
+    }
+}
