@@ -17,7 +17,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "mengsen\\jd\\": [
+            "mengsen\\jtt\\": [
                 "src/"
             ]
         }
