@@ -47,7 +47,7 @@ class TopClient
         }
         
         $result = Util::http($this->gatewayUrl . $url, $data);
-        $result = json_decode($result, true);
+        // $result = json_decode($result, true);
         // $str = str_replace(".", "_", $data['method']) . '_response';
         return json_decode($result, true);
     }
