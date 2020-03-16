@@ -8,6 +8,8 @@ class TopClient
 {
     public $appId;
     public $appkey;
+    public $unionId;
+    public $key;
     public $gatewayUrl = "http://japi.jingtuitui.com/";
     public $format = "json";
     public $connectTimeout;
@@ -23,6 +25,16 @@ class TopClient
     public function getAppkey()
     {
         return $this->appkey;
+    }
+
+    public function setUnionId($unionId)
+    {
+        $this->unionId = $unionId;
+    }
+
+    public function setKey($key)
+    {
+        $this->key = $key;
     }
 
     public function setGatewayUrl($gatewayUrl)
@@ -41,6 +53,8 @@ class TopClient
 
         $data["appid"] = $this->appId;
         $data["appkey"] = $this->appkey;
+        $data["unionid"] = $this->unionId;
+        $data["key"] = $this->key;
         // $data["timestamp"] = date('Y-m-d H:i:s');
         if(!empty($param)){
             $data = array_merge($data,$param);
